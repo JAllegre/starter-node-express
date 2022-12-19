@@ -4,6 +4,10 @@ A boilerplate to start a new simple project with a node/express/typescript setup
 
 It includes eslint, prettier, nodemon and dotenv configurations
 
+### `npm run starter`
+
+Optionally create a standard api folder structure
+
 ### `npm start`
 
 Runs the server app in the development mode.

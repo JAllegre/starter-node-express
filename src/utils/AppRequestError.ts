@@ -14,7 +14,11 @@ class AppRequestError extends Error {
    * @param clientMessage A simple message that ca be parsed by client to specify the error. Node http error text by default
    * @param extraMessage An extra message that will be only used at server side (logs)
    */
-  constructor(public clientHttpStatus?: number, public clientMessage?: string, public extraMessage?: string) {
+  constructor(
+    public clientHttpStatus?: number,
+    public clientMessage?: string,
+    public extraMessage?: string
+  ) {
     super('');
     this.clientHttpStatus = clientHttpStatus || 500;
     this.clientMessage = clientMessage || snakeCase(http.STATUS_CODES[this.clientHttpStatus]);

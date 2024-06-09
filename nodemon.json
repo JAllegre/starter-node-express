@@ -1,7 +1,6 @@
 {
-    "watch": ["src", ".env"],
-    "ext": "js,ts,json",
-    "ignore": ["src/**/*.spec.ts"],
-    "exec": "tsc && node build/app.js"
-  }
-  
+  "watch": ["src", ".env"],
+  "ext": "js,ts,json",
+  "ignore": ["src/**/*.spec.ts"],
+  "exec": "tsc && node build/main.js"
+}
